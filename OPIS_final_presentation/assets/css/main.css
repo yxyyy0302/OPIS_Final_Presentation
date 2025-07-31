@@ -33,6 +33,10 @@ body {
 ol, ul {
   list-style: none; }
 
+  blockquote{
+    font-size: 1.3em;
+  }
+
 blockquote, q {
   quotes: none; }
   blockquote:before, blockquote:after, q:before, q:after {
@@ -1000,11 +1004,11 @@ header p {
 header.major > :last-child {
   border-bottom: solid 3px #9a6c72;
   display: inline-block;
-  margin: 0 0 2em 0;
+  margin: 0 0 1.5em 0;
   padding: 0 0.75em 0.5em 0; }
 
 header.main > :last-child {
-  margin: 0 0 1em 0; }
+  margin: 0 0 0.8em 0; }
 
 /* Form */
 form {
@@ -2198,7 +2202,7 @@ button,
     color: inherit;
     cursor: pointer;
     display: block;
-    font-size: 0.9em;
+    font-size: 1em;
     padding: 0.625em 0; }
     #menu ul a:hover, #menu ul span:hover {
       color: #9a6c72; }
@@ -2266,7 +2270,62 @@ button,
       margin-bottom:1em;
     }
 
+    #carrie2{
+      color:rgb(86, 86, 86);
+      font-size:1.3em;
+      margin-bottom:2.5em;
+      margin-top: 0;
+    }
+
     #intro{
       font-size:1.2em;
     }
 
+    .features a{
+      text-decoration: none !important;
+      border-bottom: none !important;
+      font-weight: bold;
+      color:black;
+      font-size: 1.3em;
+      margin-bottom:0.3rem;
+      display: inline-block;
+    }
+
+    .features .invis {
+      visibility: hidden;
+    }
+
+    .features p, .oasys_p{
+      font-size: 1.1em;
+    }
+
+    
+    .img-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 1.8em;
+      text-align: center;
+      pointer-events: none;
+      border-radius: 5px; 
+      font-family: "Roboto Slab", serif;
+
+      
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    }
+
+    .img-text-long{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 1.5em;
+      text-align: center;
+      pointer-events: none;
+      border-radius: 5px; 
+      font-family: "Roboto Slab", serif;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    }
