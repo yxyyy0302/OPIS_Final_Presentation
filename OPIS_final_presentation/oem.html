@@ -7,7 +7,7 @@
 <html>
 
 <head>
-	<title>OEM Update</title>
+	<title>OEM Update Page</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -24,7 +24,7 @@
 
 				<!-- Header -->
 				<header id="header">
-					<strong class="date">08/09/2025</strong>
+					<strong class="date">08/07/2025</strong>
 				</header>
 
 
@@ -35,7 +35,7 @@
 					</header>
 
 					<h2>Description</h2>
-					<blockquote> The Opis Entitlements management (OEM) system is a service developed to manage licensing and 
+					<blockquote> The <a href = "https://dev-is-entitlements.preprodopisnet.io/api/">Opis Entitlements management (OEM) system</a>  is a service developed to manage licensing and 
                         user-level roles and permissions in various OPIS services. Similar to the Mend projects, OEM's Node.js version is
                         too old. I updated Node.js's version so that OEM authorizer lambda now targets the latest Node.js runtime supported by AWS
                         (nodejs16.x -> nodejs22.x).
@@ -43,6 +43,16 @@
 
 
 					<!-- <hr class="major" /> -->
+
+						<h2>Before:</h2>
+
+					<span class="image main"><img src="images/oem_before.png" alt="" /></span>
+
+					<h2>After:</h2>
+
+
+					<span class="image main"><img src="images/oem_after.png" alt="" /></span>
+
 
 
 
@@ -58,7 +68,7 @@
 
 				<!-- Search -->
 				<section id="search" class="alt">
-					<form method="post" action="#">
+					<form onsubmit="return goToPage();">
 						<input type="text" name="query" id="query" placeholder="Search" />
 					</form>
 				</section>
@@ -71,6 +81,24 @@
 					<ul>
 						<li><a href="index.html">Homepage</a></li>
 						<li><a href="mend.html">Mend Stories</a></li>
+
+						<li>
+							<span class="opener">All Mend Stories</span>
+							<ul>
+								<li><a href="healthreporter.html">lib-healthreporter</a></li>
+								<li><a href="errorhandlers.html">lib-errorhandlers</a></li>
+								<li><a href="authentication-datatransferobjects.html">lib-authentication-data-transfer-objects</a></li>
+								<li><a href="delivery-datatransferobjects.html">lib-delivery-datatransferobjects</a></li>
+								<li><a href="util.html">lib-util</a></li>
+								<li><a href="web-notices.html">web-notices</a></li>
+								<li><a href="events.html">lib-events</a></li>
+								<li><a href="delivery-client.html">lib-delivery-client</a></li>
+								<li><a href="authentication-client.html">lib-authentication-client</a></li>
+								<li><a href="web-accounts.html">web-accounts</a></li>
+								<li><a href="delivery-common.html">lib-delivery-common</a></li>
+								<li><a href="authentication-web.html">lib-authentication-web</a></li>
+							</ul>
+						</li>
 						<li><a href="oasys.html">Oasys Feature</a></li>
 						<li><a href="oem.html">OEM Update</a></li>
 						<li></li>
@@ -90,6 +118,65 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+
+	
+	<script>
+		function goToPage() {
+			const input = document.getElementById("query").value.trim();
+
+			if (input) {
+				if (input.toLowerCase() === "homepage") {
+					window.location.href = "index.html";
+				}
+				else if (input.toLowerCase() === "mend stories") {
+					window.location.href = "mend.html";
+				}
+				else if (input.toLowerCase() === "oasys feature") {
+					window.location.href = "oasys.html";
+				}
+				else if (input.toLowerCase() === "oem update") {
+					window.location.href = "oem.html";
+				}
+				else if (input.toLowerCase() === "lib-healthreporter") {
+					window.location.href = "healthreporter.html";
+				}
+				else if (input.toLowerCase() === "lib-errorhandlers") {
+					window.location.href = "errorhandlers.html";
+				}
+				else if (input.toLowerCase() === "lib-authentication-data-transfer-objects") {
+					window.location.href = "authentication-datatransferobjects.html";
+				}
+				else if (input.toLowerCase() === "lib-delivery-datatransferobjects") {
+					window.location.href = "delivery-datatransferobjects.html";
+				}
+				else if (input.toLowerCase() === "lib-util") {
+					window.location.href = "util.html";
+				}
+				else if (input.toLowerCase() === "web-notices") {
+					window.location.href = "web-notices.html";
+				}
+				else if (input.toLowerCase() === "lib-events") {
+					window.location.href = "events.html";
+				}
+				else if (input.toLowerCase() === "lib-delivery-client") {
+					window.location.href = "delivery-client.html";
+				}
+				else if (input.toLowerCase() === "lib-authentication-client") {
+					window.location.href = "authentication-client.html";
+				}
+				else if (input.toLowerCase() === "web-accounts") {
+					window.location.href = "web-accounts.html";
+				}
+				else if (input.toLowerCase() === "lib-delivery-common") {
+					window.location.href = "delivery-common.html";
+				}
+				else if (input.toLowerCase() === "lib-authentication-web") {
+					window.location.href = "authentication-web.html";
+				}
+			}
+			return false;
+		}
+	</script>
 
 </body>
 

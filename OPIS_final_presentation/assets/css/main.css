@@ -2306,13 +2306,14 @@ button,
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
-      font-size: 1.8em;
+      font-size: 1.7em;
       text-align: center;
       pointer-events: none;
       border-radius: 5px; 
       font-family: "Roboto Slab", serif;
-
-      
+      border-bottom: none;
+      border: none;
+      text-decoration: none;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
     }
 
