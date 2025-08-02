@@ -1215,6 +1215,17 @@ input[type="radio"] + label:before {
     font-family: 'Font Awesome 5 Brands'; }
 
 /* Image */
+
+.image.object.intro-images img {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 40rem;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+
 .image {
   border-radius: 0.375em;
   border: 0;
